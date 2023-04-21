@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.bigparent{
+    background-color: rgb(223, 223, 63);
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 40px;
+
+
+}
+
+.boxes {
+    display: flex;
+
+    gap: 40px;
+}
+
+.box1 {
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    animation: sample1 3s infinite alternate;
+
+}
+
+
+@keyframes sample1 {
+    0% {
+        transform: skewX(-30deg);
+    }
+
+    100% {
+        transform: skewX(30deg);
+    }
+}
+
+.box2 {
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    animation: sample2 3s infinite alternate;
+
+}
+
+@keyframes sample2 {
+    0% {
+        transform: skewY(-30deg);
+    }
+
+    100% {
+        transform: skewY(30deg);
+    }
+}
+
+.box3 {
+    background-color: rgb(103, 122, 209);
+    width: 100px;
+    height: 100px;
+    animation: sample3 3s infinite alternate;
+
+}
+
+@keyframes sample3 {
+    0% {
+        transform: rotate(90deg)
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.boxa {
+    background-color: rgb(103, 122, 209);
+    width: 100px;
+    height: 100px;
+    animation: samplea 2s infinite alternate;
+
+}
+
+@keyframes samplea {
+    0% {
+        transform: scaleY(0.5)
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.boxb {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    animation: sampleb 2s infinite alternate;
+
+}
+
+@keyframes sampleb {
+    0% {
+        transform: scaleX(0.5)
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.boxc {
+    background-color: rgb(81, 143, 81);
+    border: 3px solid darkgreen;
+    width: 100px;
+    height: 100px;
+    animation: samplec 2s infinite alternate;
+
+}
+
+@keyframes samplec {
+    0% {
+        transform: rotate(90deg)
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/*index2 CSS*/
+.items {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-star */
+    gap: 30px;
+    margin-bottom: 40px;
+
+
+}
+
+.item {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+    margin-bottom: 20px;
+
+}
+
+.one:hover {
+    width: 300px;
+}
+
+/* .two{
+    background-color: teal;
+    width: 100px;
+    height:100px;
+    transition: 2s;
+
+} */
+.two:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.three {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: width 1s linear 1s;
+
+}
+
+.three:hover {
+    width: 300px;
+}
+
+.four {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: width 1s ease 1s;
+
+}
+
+.four:hover {
+    width: 300px;
+}
+
+.five {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: width 1s ease-in 1s;
+
+}
+
+.five:hover {
+    width: 300px;
+}
+
+.six {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: width 1s ease-out 1s;
+
+}
+
+.six:hover {
+    width: 300px;
+}
+
+.seven {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-in-out 1s;
+
+}
+
+.seven:hover {
+    width: 300px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.text a {
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+/*car css*/
+
+.sky {
+    height: 100vh;
+    background-image: url(./sky.jpg);
+    border-left: 10px solid orange;
+    border-right: 10px solid green;
+}
+
+.sun {
+    position: relative;
+
+}
+
+.sun img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 20%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.happy {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.road {
+    position: relative;
+}
+
+.city {
+    margin-top: 170px;
+}
+
+.car {
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    top: -100px;
+    left: 30%;
+
+}
+
+.wheel1 {
+    position: absolute;
+    top: 8px;
+    width: 85px;
+    height: 85px;
+    left: 33%;
+    animation: rotate 3s infinite linear;
+}
+
+
+.wheel2 {
+    position: absolute;
+    top: 8px;
+    width: 85px;
+    height: 85px;
+    left: 53.5%;
+    animation: rotate 3s infinite linear;
+}
+
+.onRoadrun {
+    margin-top: -4px;
+    animation: moving 3s linear infinite;
+}
+
+@keyframes moving {
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flag {
+    position: absolute;
+    top: -120px;
+    left: 56.1%;
+    width: 85px;
+    width: 100px;
+    height: 100px;
+}
