@@ -291,6 +291,7 @@ body {
     /* width: 100vw; */
     margin-top: 170px;
     animation: city1 3s infinite linear;
+}
 @keyframes city1 {
     0% {
         transform: translateX(0px);
@@ -300,16 +301,13 @@ body {
 
     }
 }
-
 .car {
     position: absolute;
     width: 450px;
     height: 200px;
     top: -100px;
     left: 30%;
-    animation: car1 1s infinite linear ;
-    
-
+    animation: car1 1s infinite linear;
 }
 @keyframes car1{
     0%{
